@@ -1,0 +1,6 @@
+# Temp Files
+*.tmp
+
+# Outputs
+export/*
+!export/.gitkeep
