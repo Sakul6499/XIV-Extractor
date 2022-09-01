@@ -4,3 +4,7 @@
 # Outputs
 export/*
 !export/.gitkeep
+
+# Builds
+obj/
+bin/
