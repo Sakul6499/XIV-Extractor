@@ -1,11 +1,9 @@
-﻿using System.Reflection;
-using Godbert.ViewModels;
 using SaintCoinach.Graphics;
 using SaintCoinach.Graphics.Viewer;
 using SaintCoinach.Xiv;
 using SharpDX;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Starting up ...");
 
 // Initialize ARealmReversed
 const string GameDirectory = @"C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn";
