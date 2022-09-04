@@ -1,0 +1,30 @@
+pipeline {
+    agent {
+        label 'docker'
+    }
+    options {
+        disableConcurrentBuilds()
+    }
+    stages {
+        stage('.NET Version') {
+            agent {
+                docker { 
+                    image 'dotnet:latest' 
+                }
+            }
+            steps {
+                sh 'dotnet --version'
+            }
+        }
+        stage('.NET Build') {
+            agent {
+                docker { 
+                    image 'dotnet:latest' 
+                }
+            }
+            steps {
+                sh 'dotnet build'
+            }
+        }
+    }
+}
