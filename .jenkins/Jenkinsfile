@@ -1,26 +1,18 @@
 pipeline {
     agent {
-        label 'docker'
+        docker {
+            image 'mcr.microsoft.com/dotnet/sdk:latest'
+            label 'docker'
+            reuseNode true
+        }
     }
     stages {
         stage('.NET Version') {
-            agent {
-                docker { 
-                    image 'mcr.microsoft.com/dotnet/sdk:6.0' 
-                    reuseNode true
-                }
-            }
             steps {
                 sh 'dotnet --version'
             }
         }
         stage('.NET Build') {
-            agent {
-                docker { 
-                    image 'mcr.microsoft.com/dotnet/sdk:6.0' 
-                    reuseNode true
-                }
-            }
             steps {
                 sh 'dotnet build'
             }
