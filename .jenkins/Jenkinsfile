@@ -7,7 +7,7 @@ pipeline {
             agent {
                 docker { 
                     image 'dotnet:latest' 
-                    label 'docker'
+                    reuseNode true
                 }
             }
             steps {
@@ -18,7 +18,7 @@ pipeline {
             agent {
                 docker { 
                     image 'dotnet:latest' 
-                    label 'docker'
+                    reuseNode true
                 }
             }
             steps {
