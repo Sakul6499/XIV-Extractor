@@ -3,6 +3,7 @@ pipeline {
         docker {
             image 'mcr.microsoft.com/dotnet/sdk:latest'
             label 'docker'
+            args '--user root'
             reuseNode true
         }
     }
