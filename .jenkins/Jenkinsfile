@@ -15,8 +15,6 @@ pipeline {
         }
         stage('.NET Build') {
             steps {
-                sh 'pwd'
-                sh 'ls -al -R .'
                 sh 'dotnet build'
             }
         }
