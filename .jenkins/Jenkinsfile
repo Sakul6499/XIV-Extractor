@@ -1,0 +1,22 @@
+pipeline {
+    agent {
+        docker {
+            image 'mcr.microsoft.com/dotnet/sdk:latest'
+            label 'docker'
+            args '--user root'
+            reuseNode true
+        }
+    }
+    stages {
+        stage('.NET Version') {
+            steps {
+                sh 'dotnet --version'
+            }
+        }
+        stage('.NET Build') {
+            steps {
+                sh 'dotnet build'
+            }
+        }
+    }
+}
