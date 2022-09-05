@@ -253,7 +253,7 @@ namespace SaintCoinachWrapper
                         Console.Out.Flush();
                     }
 
-                    var hq = part.Model.GetModel(ModelQuality.High);    // TODO
+                    var hq = part.Model.GetModel(ModelQuality.High);
                     var filePath = hq.Definition.File.Path;
                     var lgbTransform = CreateMatrix(part.Translation, part.Rotation, part.Scale);
 
