@@ -7,6 +7,7 @@
     <RootNamespace>xiv_extractor</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <NoWarn>NU1701</NoWarn>
   </PropertyGroup>
 
   <!-- DLL Libraries   -->
@@ -14,106 +15,18 @@
     <Reference Include="SaintCoinach">
       <HintPath>lib/SaintCoinach.dll</HintPath>
     </Reference>
-    <Reference Include="DotNetZip">
-      <HintPath>lib/DotNetZip.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSquish">
-      <HintPath>lib/DotSquish.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework">
-      <HintPath>lib/EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>lib/EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="netstandard">
-      <HintPath>lib/netstandard.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>lib/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.EF6">
-      <HintPath>lib/System.Data.SQLite.EF6.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>lib/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encoding.CodePages">
-      <HintPath>lib/System.Text.Encoding.CodePages.dll</HintPath>
-    </Reference>
-    <Reference Include="Tharga.Toolkit.Console">
-      <HintPath>lib/Tharga.Toolkit.Console.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetZip">
-      <HintPath>lib/DotNetZip.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSquish">
-      <HintPath>lib/DotSquish.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework">
-      <HintPath>lib/EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="fbxInterop">
-      <HintPath>lib/fbxInterop.dll</HintPath>
-    </Reference>
-    <Reference Include="hkAnimationInterop">
-      <HintPath>lib/hkAnimationInterop.dll</HintPath>
-    </Reference>
-    <Reference Include="libfbxsdk">
-      <HintPath>lib/libfbxsdk.dll</HintPath>
-    </Reference>
-    <Reference Include="netstandard">
-      <HintPath>lib/netstandard.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>lib/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Ookii.Dialogs.Wpf">
-      <HintPath>lib/Ookii.Dialogs.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="SaintCoinach">
-      <HintPath>lib/SaintCoinach.dll</HintPath>
-    </Reference>
-    <Reference Include="SaintCoinach.dll">
-      <HintPath>lib/SaintCoinach.dll.dll</HintPath>
-    </Reference>
     <Reference Include="SaintCoinach.Graphics.Viewer">
       <HintPath>lib/SaintCoinach.Graphics.Viewer.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX.D3DCompiler">
-      <HintPath>lib/SharpDX.D3DCompiler.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct3D11">
-      <HintPath>lib/SharpDX.Direct3D11.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct3D11.Effects">
-      <HintPath>lib/SharpDX.Direct3D11.Effects.dll</HintPath>
-    </Reference>
     <Reference Include="SharpDX">
       <HintPath>lib/SharpDX.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.DXGI">
-      <HintPath>lib/SharpDX.DXGI.dll</HintPath>
-    </Reference>
-    <Reference Include="sharpdx_direct3d11_effects_x64">
-      <HintPath>lib/sharpdx_direct3d11_effects_x64.dll</HintPath>
-    </Reference>
-    <Reference Include="sharpdx_direct3d11_effects_x86">
-      <HintPath>lib/sharpdx_direct3d11_effects_x86.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>lib/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encoding.CodePages">
-      <HintPath>lib/System.Text.Encoding.CodePages.dll</HintPath>
-    </Reference>
-    <Reference Include="Godbert">
-      <HintPath>lib/Godbert.exe</HintPath>
     </Reference>
   </ItemGroup>
 
   <!-- NuGet Packages   -->
   <ItemGroup>
+    <PackageReference Include="DotNetZip" Version="1.12.0.0" />
+    <PackageReference Include="EntityFramework" Version="6.0.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
     <PackageReference Include="System.Security.Permissions" Version="6.0.0" />

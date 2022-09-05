@@ -1,4 +1,5 @@
-﻿using SaintCoinachWrapper;
+﻿using System.Reflection;
+using SaintCoinachWrapper;
 
 namespace XivExtractor
 {
@@ -10,18 +11,23 @@ namespace XivExtractor
             var client = new SaintCoinachWrapper.Client();
 
             // Search Query
+            Console.WriteLine("Search Query");
             client.GetTerritoryTypesByAnyName("The World Unsundered").ToList().ForEach(territory_type =>
             {
                 var territory = client.LoadTerritoryFromTerritoryType(territory_type);
                 Console.WriteLine(client.TerritoryToFullString(territory));
             });
+            Console.WriteLine("");
 
             // Search & Export
-            client.GetTerritoryTypesByAnyName("Purgatory").ToList().ForEach(territory_type =>
+            Console.WriteLine("Search & Export");
+            client.GetTerritoryTypesByName("n5r5", true).ToList().ForEach(territory_type =>
             {
                 var territory = client.LoadTerritoryFromTerritoryType(territory_type);
+                Console.WriteLine(client.TerritoryToFullString(territory));
                 Exporter.Export(client, territory);
             });
+            Console.WriteLine("");
         }
     }
 }
