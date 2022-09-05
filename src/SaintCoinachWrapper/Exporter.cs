@@ -247,8 +247,11 @@ namespace SaintCoinachWrapper
             {
                 foreach (var part in territory.Terrain.Parts)
                 {
-                    Console.Out.Write(".");
-                    Console.Out.Flush();
+                    if (write_to_console)
+                    {
+                        Console.Out.Write(".");
+                        Console.Out.Flush();
+                    }
 
                     var hq = part.Model.GetModel(ModelQuality.High);    // TODO
                     var filePath = hq.Definition.File.Path;
@@ -280,8 +283,11 @@ namespace SaintCoinachWrapper
                         if (part == null)
                             continue;
 
-                        Console.Out.Write(".");
-                        Console.Out.Flush();
+                        if (write_to_console)
+                        {
+                            Console.Out.Write(".");
+                            Console.Out.Flush();
+                        }
 
                         if (newGroup && (part.Type == SaintCoinach.Graphics.Lgb.LgbEntryType.Model || part.Type == SaintCoinach.Graphics.Lgb.LgbEntryType.Gimmick || part.Type == SaintCoinach.Graphics.Lgb.LgbEntryType.Light))
                         {
