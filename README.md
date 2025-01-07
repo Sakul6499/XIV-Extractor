@@ -1,5 +1,9 @@
 # XIV Extractor
 
+> [!Warning]  
+> Archived. I am no longer maintaining this project.  
+> Be warned that this is possibly against FFXIV's ToS!  
+
 A small tool using [Saint Coinach] to export [Final Fantasy XIV] models/meshes and textures/materials.
 
 ## Usage
